@@ -27,6 +27,8 @@ bin/asadmin deploy --target test-cluster --name test.payara.timer deployments/te
 bin/asadmin undeploy --target test-cluster test.payara.timer
 ```
 
-Note: can also tail instance log files with: `tail -f /opt/payara41/glassfish/nodes/node1/inst?/logs/server.log`
+Note: 
+- tail instance log files with: `tail -f /opt/payara41/glassfish/nodes/node1/inst?/logs/server.log`
+- MariaDB is accessible on standard port (3306) as DBA: `root/password
 
 
