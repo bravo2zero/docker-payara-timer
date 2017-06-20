@@ -26,6 +26,7 @@ mvn clean install
 bin/asadmin deploy --target test-cluster --name test.payara.timer deployments/test.payara.timer.ear-1.0.0-SNAPSHOT.ear
 bin/asadmin undeploy --target test-cluster test.payara.timer
 ```
+* Test application implements a stub schedule which runs every minute and writes to instance log
 
 Note: 
 - tail instance log files with: `tail -f /opt/payara41/glassfish/nodes/node1/inst?/logs/server.log`
